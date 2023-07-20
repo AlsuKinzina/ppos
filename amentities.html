@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	<script>
+	   // Initialize Firebase
+	   var config = {
+			apiKey: "AIzaSyCu3JFSjjXu3HnFMLJDoYPCPeVEm9cp1Wo",
+			authDomain: "kursovaya-fdf38.firebaseapp.com",
+			databaseURL: "https://kursovaya-fdf38-default-rtdb.firebaseio.com",
+			projectId: "kursovaya-fdf38",
+			storageBucket: "kursovaya-fdf38.appspot.com",
+			messagingSenderId: "165433964176",
+			appId: "1:165433964176:web:f5695fa85579226ad04a15",
+			measurementId: "G-LWKGN577SC"
+	   };
+	firebase.initializeApp(config);
+	</script>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>ППОС УГНТУ - Документы</title>
+	  <link rel="icon" href="img/Fevicon.png" type="image/png">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+	  
+	  <link rel="stylesheet" href="css/style.css">
+	</head>
+<body>
+
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a class="navbar-brand logo_h" href="https://vk.com/profstudugntu"><img src="img/logo.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item "><a class="nav-link" href="index.html">Главная</a></li> 
+              <li class="nav-item "><a class="nav-link" href="about.html">О нас</a></li> 
+              <li class="nav-item active"><a class="nav-link" href="amentities.html">Документы</a>                 
+              <li class="nav-item"><a class="nav-link" href="blog.html">Новости</a></li>  
+              <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+            </ul>          
+          </div> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+
+
+
+  <!--================Hero Banner SM Area Start =================-->
+  <section class="hero-banner-sm magic-ball magic-ball-banner" id="parallax-1" data-anchor-target="#parallax-1" data-300-top="background-position: 0px -80px" data-top-bottom="background-position: 0 100px">
+    <div class="container">
+      <div class="hero-banner-sm-content">
+        <h1>Документы</h1>
+      </div>
+    </div>
+  </section>
+  <!--================Hero Banner SM Area End =================-->
+<section class="blog_area section-margin-large">
+      <div class="container">
+          <div class="row">
+                  <div class="blog_left_sidebar ">
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+							<a class="d-inline-block" id='doc1'> 
+								<h2 >Соглашение ППО студентов с УГНТУ (в редакции от 2019 года)</h2>
+                            </a>
+							<script>		
+							var doc1 = document.getElementById('doc1');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc1;
+								var doc = data.doc1;
+								//cellQues1.appendChild(document.createTextNode(doc));
+								doc1.setAttribute("href",doc);								
+							});
+							</script>	
+							<ul class="blog-info-link">
+                              <li><a href="#">28 февраля, 2019 г.</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+                            <a class="d-inline-block" id='doc2'>
+                                <h2 >Правила внутреннего распорядка УГНТУ</h2>
+                            </a>
+							<script>		
+							var doc2 = document.getElementById('doc2');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc2;
+								var doc = data.doc2;
+								//cellQues1.appendChild(document.createTextNode(doc));
+								doc2.setAttribute("href",doc);								
+							});
+							</script>	
+							<ul class="blog-info-link">
+                              <li><a href="#">20 мая, 2016 г.</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+                            <a class="d-inline-block" id="doc3">
+                                <h2 >Положение о назначении профсоюзной стипендии</h2>
+                            </a>
+							<script>		
+							var doc3 = document.getElementById('doc3');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc3;
+								var doc = data.doc3;
+								//cellQues1.appendChild(document.createTextNode(doc));
+								doc3.setAttribute("href",doc);								
+							});
+							</script>
+							<ul class="blog-info-link">
+                              <li><a href="#">03 февраля, 2020 г.</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+                            <a class="d-inline-block" id='doc4'>
+                                <h2 >Образец заявления на базе санатория РБ, УНПП Солуни, на Черноморском побережье РФ</h2>
+                            </a>
+							<script>		
+							var doc4 = document.getElementById('doc4');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc4;
+								var doc = data.doc4;
+								//cellQues1.appendChild(document.createTextNode(doc));
+								doc4.setAttribute("href",doc);								
+							});
+							</script>
+							<p>Заявление пишется от руки</p>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+                            <a class="d-inline-block" id='doc5'>
+                                <h2 >Образец заявления на летнее оздоровление (СПб)</h2>
+                            </a>
+							<script>		
+							var doc5 = document.getElementById('doc5');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc5;
+								var doc = data.doc5;
+								//cellQues1.appendChild(document.createTextNode(doc));
+								doc5.setAttribute("href",doc);								
+							});
+							</script>
+							<p>Заявление пишется от руки</p>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+                            <a class="d-inline-block"  id='doc6'>
+								<h2>Памятка профорга группы</h2>
+                            </a>
+							<script>		
+							var doc6 = document.getElementById('doc6');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc6;
+								var doc = data.doc6;
+								doc6.setAttribute("href",doc);								
+							});
+							</script>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+							<a class="d-inline-block" id='doc7'>
+							 <h2>Положение о переводе с платной основы на бюджет</h2>
+                            </a>
+							<script>		
+							var doc7 = document.getElementById('doc7');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								var cellQues1 = doc7;
+								var doc = data.doc7;
+								doc7.setAttribute("href",doc);								
+							});
+							</script>
+							<ul class="blog-info-link">
+                              <li><a href="#">30 октября, 2019 г.</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item bg-gray">
+                        <div class="blog_details">
+							<a class="d-inline-block"  id = 'doc8'>
+								<h2>ПОЛОЖЕНИЕ о стипендиальном обеспечении и других формах материальной поддержки обучающихся УГНТУ</h2>
+							</a>                            
+							<script>		
+							var doc8 = document.getElementById('doc8');
+							var user_ref1 = firebase.database().ref('doc/');
+							user_ref1.on('value', function(snapshot){
+								var data = snapshot.val();
+								doc8.setAttribute("href",data.doc8);								
+							});
+							</script>
+							<ul class="blog-info-link">
+                              <li><a href="#">26 февраля, 2021 г.</a></li>
+                            </ul>
+                        </div>
+                      </article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	
+  <!-- ================ start footer Area ================= -->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3  col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Профком студентов и аспирантов УГНТУ</h6>
+              <a  href="https://vk.com/profstudugntu"><img src="img/logo2.png" alt="">
+        
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Навигация</h6>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="about.html">О нас</a></li>
+                  <li><a href="blog.html">Новости</a></li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+              </div>										
+            </div>							
+          </div>
+        </div>
+        <div class="col-lg-3  col-md-6 col-sm-6">
+          <div class="single-footer-widgetsingle-footer-widget">
+			  <h6 class="mb-20">Контакты</h6>
+			  <p><img src="img/icons/locat.png" alt="">  ул.Первомайская, 14, каб. 326, 327</p>
+			  <p><img src="img/icons/phone-32.png" alt="">  тел. +7 (347) 264-87-69</p>
+			  <p><img src="img/icons/maiil.png" alt="">  profstudugntu@mail.ru</p>
+          </div>
+        </div>						
+      </div>
+    </div>
+  </footer>
+  <!-- ================ End footer Area ================= -->
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
